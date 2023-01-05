@@ -45,8 +45,8 @@ export default function Forecast({ data }) {
                     {item.weather[0].description}
                   </label>
                   <label className="min-max">
-                    {Math.round(item.main.temp_min)}°C /
-                    {Math.round(item.main.temp_max)}°C
+                    {Math.round(item.main.temp_min - 273.15)}°C /
+                    {Math.round(item.main.temp_max - 273.15)}°C
                   </label>
                 </div>
               </AccordionItemButton>
